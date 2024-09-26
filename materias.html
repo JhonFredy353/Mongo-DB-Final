@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                    <i class="fa-solid fa-book"></i>
+                    <h1 class="logo"><a href="/">Maquiavelico</a></h1>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+						<li><a href="carros.html">Carros</a></li>
+						<li><a href="hoteles.html">Hoteles</a></li>
+						<li><a href="materias.html">materias</a></li>
+						<li><a href="producto.html">productos</a></li>
+						<li><a href="platos.html">Restaurante</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="container top-products">
+            <h1 class="heading-1">Materias Disponibles</h1>
+
+            <div class="container-products">
+                <!-- Materia 1: Fundamento Matemático -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/fundamentoM.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Fundamento Matemático</h3>
+                        <p><strong>Profesor:</strong> Leidy Marcela Gómez Melo</p>
+                        <p><strong>Aula:</strong> 203 JN</p>
+                        <p><strong>Créditos:</strong> 2</p>
+                        <p><strong>Promedio Calificaciones:</strong> 4.0</p>
+                    </div>
+                </div>
+
+                <!-- Materia 2: Lógica Matemática -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/logicaM.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Lógica Matemática</h3>
+                        <p><strong>Profesor:</strong> Alejandra Zuleta Medina</p>
+                        <p><strong>Aula:</strong> 601 MI</p>
+                        <p><strong>Créditos:</strong> 2</p>
+                        <p><strong>Promedio Calificaciones:</strong> 4.8</p>
+                    </div>
+                </div>
+
+                <!-- Materia 3: Algoritmos y Programación 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/Algoritmos.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Algoritmos y Programación 1</h3>
+                        <p><strong>Profesor:</strong> Alvaro Alexander Martinez Navarro</p>
+                        <p><strong>Aula:</strong> 601 MI</p>
+                        <p><strong>Créditos:</strong> 3</p>
+                        <p><strong>Promedio Calificaciones:</strong> 4.1</p>
+                    </div>
+                </div>
+        </section>
+        <section class="container top-products"></section>
+        <h1 class="heading-1">Base de datos</h1>
+
+        <div class="container-products">
+           
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/baseD.jpg" />
+                </div>
+                <div class="content-card-product">
+                    <h3>Base de datos</h3>                       
+                </div>
+            </div>
+           
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/1.jpg" />
+                </div>
+                <div class="content-card-product">
+                    <h3>Primera busqueda</h3>
+                    <p>db.materias.find({ "Materia": { "$eq": "Python Foundation" } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/2.jpg" />
+                </div>
+                <div class="content-card-product">
+                    <h3>segunda busqueda</h3>
+                    <p>db.materias.find({ "Creditos": { "$gt": 1 } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/3.jpg"  />
+                </div>
+                <div class="content-card-product">
+                    <h3>tercera busqueda</h3>
+                    <p>db.materias.find({ "Horas_clase_teoricas": { "$gte": 2 } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/4.jpg"  />
+                </div>
+                <div class="content-card-product">
+                    <h3>cuarta busqueda</h3>
+                    <p>db.materias.find({ "Hora_clase_practica": { "$lt": 1 } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/5.jpg"  />
+                </div>
+                <div class="content-card-product">
+                    <h3>quinta busqueda</h3>
+                    <p>db.materias.find({ "Codigo": { "$lte": 84040 } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/6.jpg" />
+                </div>
+                <div class="content-card-product">
+                    <h3>sexta busqueda</h3>
+                    <p>db.materias.find({ "Profesor": { "$ne": "Alejandra Zuleta Medina" } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/7.jpg"  />
+                </div>
+                <div class="content-card-product">
+                    <h3>septima busqueda</h3>
+                    <p>db.materias.find({ "Aula": { "$in": ["601 MI", "603 MI"] } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/8.jpg"/>
+                </div>
+                <div class="content-card-product">
+                    <h3>octava busqueda</h3>
+                    <p>db.materias.find({ "Aula": { "$nin": ["601 MI", "602 MI"] } });</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="imgM/9.jpg" />
+                </div>
+                <div class="content-card-product">
+                    <h3>novena busqueda</h3>
+                    <p>db.materias.find();</p>
+                </div>
+            </div>  
+            <div class="card-product"></div>
+                <div class="container-img">
+                    <img src="imgM/10.jpg"  />
+                </div>
+                <div class="content-card-product">
+                    <h3>decima busqueda</h3>
+                    <p>db.materias.deleteOne({ "Codigo": 84040 });</p>
+                </div>
+            </div>          
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="copyright">
+                <p>Desarrolladores umariana</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

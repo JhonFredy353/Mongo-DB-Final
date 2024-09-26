@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h1 class="logo"><a href="/">Maquiavelico</a></h1>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+						<li><a href="carros.html">Carros</a></li>
+						<li><a href="hoteles.html">Hoteles</a></li>
+						<li><a href="materias.html">materias</a></li>
+						<li><a href="producto.html">productos</a></li>
+						<li><a href="platos.html">Restaurante</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="container top-products">
+            <h1 class="heading-1">Hoteles Disponibles</h1>
+
+            <div class="container-products">
+                <!-- Hotel 1: Hotel La Montaña -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/hotel-la-montana.jpg" alt="Hotel La Montaña" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Hotel La Montaña</h3>
+                        <p class="price">Tarifa promedio: $839,800 COP</p>
+                        <p>Ubicación: Carrera 15 #8-12, Bogotá, Colombia</p>
+                        <p>Clasificación: 4 estrellas</p>
+                        <p>Capacidad: 4 personas</p>
+                        <p>Área total: 5000 m²</p>
+                    </div>
+                </div>
+
+                <!-- Hotel 2: Hotel El Refugio -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/hotel-el-refugio.jpg" alt="Hotel El Refugio" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Hotel El Refugio</h3>
+                        <p class="price">Tarifa promedio: $419,900 COP</p>
+                        <p>Ubicación: Calle 23 #15-27, Medellín, Colombia</p>
+                        <p>Clasificación: 3 estrellas</p>
+                        <p>Capacidad: 3 personas</p>
+                        <p>Área total: 3200 m²</p>
+                    </div>
+                </div>
+
+                <!-- Hotel 3: Hotel Playa Dorada -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/hotel-playa-dorada.jpg" alt="Hotel Playa Dorada" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Hotel Playa Dorada</h3>
+                        <p class="price">Tarifa promedio: $1,259,700 COP</p>
+                        <p>Ubicación: Av. Playa #45-89, Cartagena, Colombia</p>
+                        <p>Clasificación: 5 estrellas</p>
+                        <p>Capacidad: 6 personas</p>
+                        <p>Área total: 8000 m²</p>
+                    </div>
+                </div>
+        </section>
+        <section class="container top-products"></section>
+            <h1 class="heading-1">Base de datos</h1>
+
+            <div class="container-products">
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/baseD.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Base de datos</h3>                       
+                    </div>
+                </div>
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/1.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Primera busqueda</h3>
+                        <p>db.hoteles.find({ "Nombre": { $eq: "Hotel Mirador del Lago" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/2.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>segunda busqueda</h3>
+                        <p>db.hoteles.find({ "Clasificación": { $gt: "4 estrellas" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/3.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>tercera busqueda</h3>
+                        <p>db.hoteles.find({ "TarifaPromedio": { $gte: 800000 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/4.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>cuarta busqueda</h3>
+                        <p>db.hoteles.find({ "AreaTotal": { $lt: 4000 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/5.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>quinta busqueda</h3>
+                        <p>db.hoteles.find({ "Capacidad": { $lte: 4 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/6.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>sexta busqueda</h3>
+                        <p>db.hoteles.find({ "Ubicación": { $ne: "Calle 12 #14-56, Turbo, Colombia, 057860" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="iimgH/7.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>septima busqueda</h3>
+                        <p>db.hoteles.find({ "IngresosMensuales": { $in: [200000000, 300000000, 400000000] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/8.jpg"/>
+                    </div>
+                    <div class="content-card-product">
+                        <h3>octava busqueda</h3>
+                        <p>db.hoteles.find({ "Nombre": { $nin: ["Hotel Casa del Mar", "Hotel El Pueblito"] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgH/9.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>novena busqueda</h3>
+                        <p>db.hoteles.find();</p>
+                    </div>
+                </div>  
+                <div class="card-product"></div>
+                    <div class="container-img">
+                        <img src="imgH/10.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>decima busqueda</h3>
+                        <p>db.hoteles.deleteOne({ "Nombre": "Hotel Las Rocas" });</p>
+                    </div>
+                </div>          
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="copyright">
+                <p>Desarrolladores umariana</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

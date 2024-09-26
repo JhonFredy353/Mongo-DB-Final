@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                    <i class="fa-solid fa-car"></i>
+                    <h1 class="logo"><a href="/">Maquiavelico</a></h1>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+						<li><a href="carros.html">Carros</a></li>
+						<li><a href="hoteles.html">Hoteles</a></li>
+						<li><a href="materias.html">materias</a></li>
+						<li><a href="producto.html">productos</a></li>
+						<li><a href="platos.html">Restaurante</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="container top-products">
+            <h1 class="heading-1">Carros Disponibles</h1>
+
+            <div class="container-products">
+                <!-- Coche 1: Toyota Corolla -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/toyota-corolla.jpg" alt="Toyota Corolla" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Toyota Corolla (2020)</h3>
+                        <p class="price">$83,980,000</p>                   
+                        <p>Color: Rojo</p>             
+                    </div>
+                </div>
+
+                <!-- Coche 2: Honda Civic -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/honda-civic.jpg" alt="Honda Civic" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Honda Civic (2019)</h3>
+                        <p class="price">$92,378,000</p>                      
+                        <p>Color: Negro</p>                      
+                    </div>
+                </div>
+
+                <!-- Coche 3: Ford Focus -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/ford-focus.jpg" alt="Ford Focus" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Ford Focus (2018)</h3>
+                        <p class="price">$75,582,000</p>                       
+                        <p>Color: Azul</p>
+                    </div>
+                </div>             
+            </div>
+        </section>
+        <section class="container top-products">
+            <h1 class="heading-1">Base de datos</h1>
+
+            <div class="container-products">
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/baseC.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Base de datos</h3>                       
+                    </div>
+                </div>
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/1.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Primera busqueda</h3>
+                        <p>db.carros.find({ Color:{$eq: "Negro"}});</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/2.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>segunda busqueda</h3>
+                        <p>db.carros.find({ "Año de fabricación": { $gt: 2020 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/3.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>tercera busqueda</h3>
+                        <p>db.carros.find({ Precio: { $gte: 100000000 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/4.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>cuarta busqueda</h3>
+                        <p>db.carros.find({ "Capacidad de pasajeros": { $lt: 5 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/5.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>quinta busqueda</h3>
+                        <p>db.carros.find({ "Potencia del motor": { $lte: 150 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/6.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>sexta busqueda</h3>
+                        <p>db.carros.find({ Marca: { $ne: "Toyota" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/7.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>septima busqueda</h3>
+                        <p>db.carros.find({ Color: { $in: ["Negro", "Rojo", "Gris"] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/8.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>octava busqueda</h3>
+                        <p>db.carros.find({ Marca: { $nin: ["Honda", "Ford"] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/9.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>novena busqueda</h3>
+                        <p>db.carros.find({ "Consumo de combustible": { $gt: 10 } });</p>
+                    </div>
+                </div>   
+            <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgC/10.jpg"  />
+                    </div>
+                <div class="content-card-product">
+                        <h3>decima busqueda</h3>
+                        <p>db.carros.deleteOne({ _id: 21 });</p>
+                    </div>
+                </div>            
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="copyright">
+                <p>Desarrolladores umariana</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

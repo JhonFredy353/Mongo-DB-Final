@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                    <i class="fa-solid fa-box"></i>
+                    <h1 class="logo"><a href="/">Maquiavelico</a></h1>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+						<li><a href="carros.html">Carros</a></li>
+						<li><a href="hoteles.html">Hoteles</a></li>
+						<li><a href="materias.html">materias</a></li>
+						<li><a href="producto.html">productos</a></li>
+						<li><a href="platos.html">Restaurante</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="container top-products">
+            <h1 class="heading-1">Productos Disponibles</h1>
+
+            <div class="container-products">
+                
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/Laptop Lenovo ThinkPad.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Laptop Lenovo ThinkPad X1 Carbon</h3>
+                        <p><strong>Descripción:</strong> Ultrabook ligera y potente con procesador Intel Core i7.</p>
+                        <p><strong>Precio:</strong> $7,500,000</p>
+                        <p><strong>Valoración Promedio:</strong> 4.8</p>
+                    </div>
+                </div>
+
+                
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/camiseNike.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Camiseta Nike Dri-Fit</h3>
+                        <p><strong>Descripción:</strong> Camiseta deportiva con tecnología de secado rápido.</p>
+                        <p><strong>Precio:</strong> $85,000</p>
+                        <p><strong>Valoración Promedio:</strong> 4.6</p>
+                    </div>
+                </div>
+
+                
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="img/Galaxy S21.png" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Smartphone Samsung Galaxy S21</h3>
+                        <p><strong>Descripción:</strong> Teléfono inteligente con pantalla de 6.2 pulgadas y cámara triple.</p>
+                        <p><strong>Precio:</strong> $3,800,000</p>
+                        <p><strong>Valoración Promedio:</strong> 4.7</p>
+                    </div>
+                </div>
+        </section>
+        <section class="container top-products"></section>
+            <h1 class="heading-1">Base de datos</h1>
+
+            <div class="container-products">
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/baseD.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Base de datos</h3>                       
+                    </div>
+                </div>
+               
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/1.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>Primera busqueda</h3>
+                        <p>db.productos.find({ "nombre": { $eq: "Silla Gamer Razer Iskur" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/2.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>segunda busqueda</h3>
+                        <p>db.productos.find({ "precio": { $gt: 1000000 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/3.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>tercera busqueda</h3>
+                        <p>db.productos.find({ "disponibilidad": { $gte: 20 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/4.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>cuarta busqueda</h3>
+                        <p>db.productos.find({ "modelo": { $lt: "A300" } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/5.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>quinta busqueda</h3>
+                        <p>db.productos.find({ "peso": { $lte: 0.5 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/6.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>sexta busqueda</h3>
+                        <p>db.productos.find({ "unidades_vendidas": { $ne: 300 } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/7.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>septima busqueda</h3>
+                        <p>db.productos.find({ "valoracion_promedio": { $in: [4.5, 4.7, 4.8] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/8.jpg"/>
+                    </div>
+                    <div class="content-card-product">
+                        <h3>octava busqueda</h3>
+                        <p>db.productos.find({ "valoracion_promedio": { $nin: [3.5, 4.0] } });</p>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="imgP/9.jpg" />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>novena busqueda</h3>
+                        <p>db.productos.find();</p>
+                    </div>
+                </div>  
+                <div class="card-product"></div>
+                    <div class="container-img">
+                        <img src="imgP/10.jpg"  />
+                    </div>
+                    <div class="content-card-product">
+                        <h3>decima busqueda</h3>
+                        <p>db.productos.updateOne({ "nombre": "Café Juan Valdez Premium 500g" }, { $set: { "precio": 30000 } });</p>
+                    </div>
+                </div>          
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="copyright">
+                <p>Desarrolladores umariana</p>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
